@@ -30,14 +30,14 @@ const handleUserLogin=async (req,res)=>{
     // return res.render("home");
 }
 
-const handleLogout=async(req,res)=>{
-removeUser(req.cookies.uid);
-return res.status(200).send({message:"Log out successful"})
-}
+// const handleLogout=async(req,res)=>{
+// removeUser(req.cookies.uid);
+// return res.status(200).send({message:"Log out successful"})
+// }
 
 module.exports={
     getDetails,
     handleUserSignup,
     handleUserLogin,
-    handleLogout
+    // handleLogout
 }
